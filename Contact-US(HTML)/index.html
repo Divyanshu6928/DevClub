@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactUS</title>
+    <!-- <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css"> -->
+</head>
+<body>
+    <h3><u>ContactUs</u></h3>
+    <form action="">
+        <label for="firstName">First name :</label>
+        <input type="text" name="firstName" id="firstName" placeholder="Enter your first name"  pattern="[A-Za-z]{2,}" required><br><br>
+        
+        <label for="lastName">Last name :</label>
+        <input type="text" name="lastName" id="lastName" placeholder="Enter your first name"  pattern="[A-Za-z]{2,}" required><br><br>
+
+        <label for="emailID">Email Address :</label>
+        <input type="email" name="emailID" id="emailID" placeholder="Enter your email" pattern="[a-zA-z0-9._%+-]+@[a-zA-z0-9.-]+\.[a-zA-Z]{2,}"><br><br>
+        
+        <label for="phoneNumber">Phone number :</label>
+        <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Enter your phone number" pattern="[0-9]{10,}"><br><br>
+
+        <label for="message">Message :</label><br>&nbsp;
+        <textarea name="message" id="message" rows="5" placeholder="Write your message"></textarea><br><br>
+    
+        <button type="submit">Submit</button>
+        
+    </form>
+</body>
+</html>
