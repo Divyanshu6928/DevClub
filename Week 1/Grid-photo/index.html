@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            /* background: url(./public/images/bg.png); */
+            /* background-size: contain; */
+            /* background-repeat: no-repeat; */
+            /* background-size: cover; */
+            /* background-clip: border-box; */
+            /* background-attachment: fixed; */
+            /* background; */
+        }
+        .gallery-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px;
+        }
+        .gallery-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #feda15;
+        }
+        .gallery {
+            display: grid;
+            gap: 15px;
+            padding: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            object-fit: cover;
+            box-shadow: 0 5px 20px rgba(255, 152, 0, 0.5);
+            transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+            border: 3px solid #ff9800;
+        }
+        .gallery img:hover {
+            transform: scale(1.1) rotate(5deg);
+            opacity: 0.85;
+            filter: brightness(1.2);
+        }
+        .watermark{
+            border: 1px solid #ff9800;
+            border-radius: 12px;
+            /* margin: 30px; */
+            padding: 0px 120px 0px 10px;
+            background-color: #ff9800;
+            width: 60px;
+            position: fixed;
+            top: 20px;
+            right: -45px;
+            cursor: pointer;
+        }
+        .watermark1{
+            border: 1px solid #ffffff;
+            border-radius: 12px;
+            /* margin: 30px; */
+            padding: 0px 120px 0px 10px;
+            background-color: #ffffff;
+            z-index: -1;
+            width: 60px;
+            height: 60px;
+            position: fixed;
+            top: 23px;
+            right: -42px;
+            cursor: pointer;
+        }
+        @media (min-width: 600px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+        }
+        @media (min-width: 900px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="watermark">
+        <h3>It's DG</h3>
+    </div>
+    <div class="watermark1">
+        
+    </div>
+    <div class="gallery-container  ">
+        <div class="gallery-title">🔥 Photo Gallery 🔥</div>
+        <div class="gallery">
+            <img src="./public/images/img1.jpg" alt="Image">
+            <img src="./public/images/img2.jpg" alt="Image">
+            <img src="./public/images/img3.jpg" alt="Image">
+            <img src="./public/images/img4.jpg" alt="Image">
+            <img src="./public/images/img5.jpg" alt="Image">
+            <img src="./public/images/img6.jpg" alt="Image">
+            <img src="./public/images/img1.jpg" alt="Image">
+            <img src="./public/images/img2.jpg" alt="Image">
+            <img src="./public/images/img3.jpg" alt="Image">
+            <img src="./public/images/img4.jpg" alt="Image">
+            <img src="./public/images/img5.jpg" alt="Image">
+            <img src="./public/images/img6.jpg" alt="Image">
+            <img src="./public/images/img1.jpg" alt="Image">
+            <img src="./public/images/img2.jpg" alt="Image">
+            <img src="./public/images/img3.jpg" alt="Image">
+            <img src="./public/images/img4.jpg" alt="Image">
+            <img src="./public/images/img5.jpg" alt="Image">
+            <img src="./public/images/img6.jpg" alt="Image">
+        </div>
+    </div>
+</body>
+</html>
